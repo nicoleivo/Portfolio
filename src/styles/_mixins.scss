@@ -1,0 +1,61 @@
+@use './variables/' as var;
+
+@mixin center-things {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+@mixin links {
+    text-decoration: none;
+    color: var.$dark-grey;
+    text-shadow: ;
+}
+
+@mixin links-hovered {
+  color: var.$pink;
+  text-shadow: 1px 1px 15px rgba(129, 129, 129, 0.2);
+  transform: scale(1.05);
+  transition: all 0.2s;
+}
+
+@mixin text {
+  font-size: 1.45rem;
+  padding: 0;
+  line-height: 2rem;
+  color: var.$dark-grey;
+}
+
+@mixin pages-layout {
+  margin: 3.125rem auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin pages-title {
+    font-size: clamp(3rem, 3vw, 4rem);
+    font-weight: 500;
+    color: var.$grey;
+}
+
+@mixin background($img-path, $bg-size: cover, $bg-position: center, $bg-repeat: no-repeat) {
+  background: {
+    image: url($img-path);
+    size: $bg-size;
+    position: $bg-position;
+    repeat: $bg-repeat;
+  }
+}
+
+@mixin box-size {
+  height: 355px;
+  width: 100%;
+}
+
+@mixin font-awesome {
+  @extend %fa-icon;
+  margin-left: 0.5rem;
+}

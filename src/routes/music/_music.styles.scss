@@ -1,0 +1,71 @@
+@use '../../styles/variables/' as var;
+@use '../../styles/mixins/' as mixins;
+
+#music {
+    margin: 3.125rem auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+    .h2-container {
+      @include mixins.center-things;
+      h2 {
+        @include mixins.pages-title;
+      }
+    }
+  
+    .spotify {
+      margin: 4rem auto 5rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  
+      iframe {
+        width: clamp(20rem, 30vw, 40rem);
+      }
+      .music-text1 {
+        width: clamp(20rem, 45%, 50rem);
+        margin-left: 6rem;
+        margin-top: -0.4rem;
+        p {
+          @include mixins.text;
+          color: var.$black;
+        
+          &:nth-child(1) {
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+  
+    .music-skills {
+  
+      .skill-text {
+        text-align: center;
+        font-size: 3rem;
+        color: var.$dark-grey;
+        text-align: center;
+      }
+    }
+  }
+  
+  @media screen and (max-width:1250px) {
+    .spotify {
+      flex-direction: column;
+      align-items: center;
+      iframe {
+        margin-bottom: 4rem;
+      }
+  
+      .music-text1 {
+        margin: 0 5rem;
+      }
+    } 
+  
+    .music-skills {
+      .skill-text {
+        font-size: 10rem;
+      }
+    }
+  }

@@ -1,0 +1,52 @@
+@use '../../styles/variables/' as var;
+@use '../../styles/mixins/' as mixins;
+
+#about {
+    @include mixins.pages-layout;
+    position: relative;
+  
+    .h2-container {
+      @include mixins.center-things;
+  
+      h2 {
+        @include mixins.pages-title;
+      }
+    }
+    .about-img img{
+      position: absolute;
+      left: 5vw;
+      top: 140px;
+      height: 275px;
+      clip-path: circle(75px at 50% 30%);
+    }
+    .about-text {
+      width: clamp(35rem, 50%, 75rem);
+      @include mixins.text;
+      margin: 4rem auto 5rem;
+    }
+  
+    .skill-container {
+      width: clamp(35rem, 50%, 75rem);
+      text-align: center;
+      color: var.$grey;
+      font-size: 1.5rem;
+  
+      .icon-container {
+        display: flex;
+        margin: 3rem;
+        justify-content: space-between;
+        color: var.$dark-grey;
+        font-size: 3rem;
+      }
+    }
+  }
+  
+  @media screen and (max-width:1430px) {
+    #about {
+      .about-img img{
+      position: relative;
+      left: 0px;
+      top: 100px;
+      }
+    }
+  } 

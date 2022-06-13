@@ -1,0 +1,68 @@
+@use '../../styles/mixins/' as mixins;
+
+#portfolio {
+    width: 80%;
+    margin: 3.125rem auto;
+  
+    .h2-container {
+      @include mixins.center-things;
+      @include mixins.pages-title;
+    }
+  
+    .portfolio-container {
+      margin: 4rem auto 5rem;
+      width: 100%;
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.35rem;
+  
+      
+      .box {
+        width: 100%;
+  
+        a {
+          text-decoration: none;
+          color: black;
+          text-align: center;
+  
+          &:hover .web-img{
+            box-shadow: 36px 60px 400px -53px rgba(0,0,0,0) inset;
+            transform: scale(1.05);
+            transition: all 0.2s;
+          }
+  
+          .web-img {
+            box-shadow: 36px 60px 400px -53px rgba(0,0,0,0.31) inset;
+            transition: all 0.2s;
+          }
+  
+          .design-img {
+            @include mixins.box-size;
+            @include mixins.background('../../images/design.png')
+          }
+    
+            .speaker-img {
+              @include mixins.box-size;
+              @include mixins.background('../../images/speaker.png')
+            }
+    
+            .wall-img {
+              @include mixins.box-size;
+              @include mixins.background('../../images/grid.png')
+            }
+    
+            .travel-img {
+              @include mixins.box-size;
+              @include mixins.background('../../images/travel.png')
+          }
+  
+          h3 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-top: 1rem;
+          }
+        }
+      }
+    }
+  }
