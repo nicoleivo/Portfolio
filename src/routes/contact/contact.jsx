@@ -1,3 +1,4 @@
+import React from 'react'
 import { Link } from 'react-router-dom'
 import './_contact.styles.scss'
 
@@ -9,7 +10,7 @@ import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons'
 const Contact = () => {
     const envelope = <FontAwesomeIcon icon={faEnvelope} />;
     const github = <FontAwesomeIcon icon={faGithub} />;
-    const instagram = <FontAwesomeIcon icon={faInstagram} />;
+    // const instagram = <FontAwesomeIcon icon={faInstagram} />;
 
     return (
         <section id="contact">

@@ -1,3 +1,5 @@
+import React from 'react'
+
 import './_about.styles.scss'
 
 import img from '../../images/photo_2021-11-12_14-32-15.jpg'

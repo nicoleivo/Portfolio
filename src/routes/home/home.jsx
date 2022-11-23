@@ -1,3 +1,4 @@
+import React from 'react'
 import { Outlet } from 'react-router-dom'
 
 import img from '../../images/13A4F5FA-EC62-41F8-85AC-D4376A4F25BD.jpg'

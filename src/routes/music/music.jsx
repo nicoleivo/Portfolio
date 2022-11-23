@@ -1,3 +1,4 @@
+import React from 'react'
 import './_music.styles.scss'
 
 const Music = () => {
