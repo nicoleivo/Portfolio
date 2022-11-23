@@ -5,7 +5,7 @@ import './_contact.styles.scss'
 import img from '../../images/13A4F5FA-EC62-41F8-85AC-D4376A4F25BD.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
-import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Contact = () => {
     const envelope = <FontAwesomeIcon icon={faEnvelope} />;
