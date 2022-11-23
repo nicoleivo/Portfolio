@@ -31,12 +31,12 @@ const Contact = () => {
                         <span className="github">{github}</span>
                 </Link>
                 
-                <Link 
+                {/* <Link 
                     to="https://instagram.com/_leivo" 
                     target="_blank">
                         Instagram
                         <span className="instagram">{instagram}</span>
-                </Link>
+                </Link> */}
             </div>
         </section>
     )

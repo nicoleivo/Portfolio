@@ -12,17 +12,27 @@
         @include mixins.pages-title;
       }
     }
-    .about-img img{
+
+    .about-img {
       position: absolute;
       left: 5vw;
-      top: 140px;
-      height: 275px;
-      clip-path: circle(75px at 50% 30%);
+      top: 115px;
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+      border-radius: 50%;
+      margin-bottom: 1.75rem;
+
+      img {
+        height: 275px;
+      }
     }
+
     .about-text {
-      width: clamp(35rem, 50%, 75rem);
+      width: clamp(35rem, 56%, 75rem);
       @include mixins.text;
-      margin: 4rem auto 5rem;
+      margin: 3rem auto 5rem;
+      color: var.$black;
     }
   
     .skill-container {
@@ -33,10 +43,18 @@
   
       .icon-container {
         display: flex;
-        margin: 3rem;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 2rem;
         color: var.$dark-grey;
         font-size: 3rem;
+
+        div {
+          margin: .5rem 0;
+          span {
+            margin: 2rem;
+          }
+        }
       }
     }
   }
@@ -46,7 +64,7 @@
       .about-img img{
       position: relative;
       left: 0px;
-      top: 100px;
+      top: 0px;
       }
     }
   } 

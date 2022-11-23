@@ -2,11 +2,8 @@
 @use '../../styles/mixins/' as mixins;
 
 #music {
-    margin: 3.125rem auto;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    @include mixins.pages-layout;
+    position: relative;
   
     .h2-container {
       @include mixins.center-things;
@@ -22,10 +19,10 @@
       justify-content: center;
   
       iframe {
-        width: clamp(20rem, 30vw, 40rem);
+        width: clamp(40rem, 30vw, 40rem);
       }
       .music-text1 {
-        width: clamp(20rem, 45%, 50rem);
+        width: clamp(40rem, 45%, 50rem);
         margin-left: 6rem;
         margin-top: -0.4rem;
         p {

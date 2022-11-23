@@ -10,7 +10,6 @@
 @mixin links {
     text-decoration: none;
     color: var.$dark-grey;
-    text-shadow: ;
 }
 
 @mixin links-hovered {
@@ -24,11 +23,12 @@
   font-size: 1.45rem;
   padding: 0;
   line-height: 2rem;
+  text-align: center;
   color: var.$dark-grey;
 }
 
 @mixin pages-layout {
-  margin: 3.125rem auto;
+  margin: 2.75rem auto;
   width: 80%;
   display: flex;
   align-items: center;
@@ -36,7 +36,7 @@
 }
 
 @mixin pages-title {
-    font-size: clamp(3rem, 3vw, 4rem);
+    font-size: clamp(2.5rem, 2.5vw, 3.5rem);
     font-weight: 500;
     color: var.$grey;
 }
@@ -51,7 +51,7 @@
 }
 
 @mixin box-size {
-  height: 355px;
+  height: 255px;
   width: 100%;
 }
 

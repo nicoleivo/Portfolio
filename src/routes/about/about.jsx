@@ -2,7 +2,20 @@ import './_about.styles.scss'
 
 import img from '../../images/photo_2021-11-12_14-32-15.jpg'
 
+import { FaJs, FaHtml5, FaCss3, FaReact, FaSass, FaNodeJs} from 'react-icons/fa'
+import { SiRedux, SiSocketdotio, SiMongodb } from 'react-icons/si'
+
 const About = () => {
+    const html5 = <FaHtml5 />;
+    const css3 = <FaCss3 />;
+    const javascript = <FaJs />;
+    const react = <FaReact />;
+    const node = <FaNodeJs />;
+    const redux = <SiRedux />;
+    const socket = <SiSocketdotio />;
+    const mongo = <SiMongodb />;
+    const sass = <FaSass />;
+
     return (
         <>
             <section id="about">
@@ -11,18 +24,25 @@ const About = () => {
                 </div>
                 <div className="about-img"><img src={img} alt="Me"/></div>
                 <div className="text-container">
-                    <div className="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, in modi omnis autem consectetur sit tempore doloremque accusamus ab voluptatum iste laboriosam blanditiis culpa accusantium mollitia fugiat eligendi ut fugit! Fugit, iste quaerat. Consectetur, est nihil, sapiente numquam amet esse neque fugit magni eum harum sed fugiat commodi cum consequatur laborum itaque dignissimos et quaerat ducimus mollitia sit explicabo! Ut facilis id distinctio ad enim. Perspiciatis ducimus culpa commodi, esse obcaecati quaerat velit cupiditate maxime. Ducimus optio at itaque sint deserunt laboriosam obcaecati laudantium perferendis cumque, placeat pariatur nam atque saepe corrupti beatae ut quos explicabo fugiat neque deleniti quaerat. Possimus illum quaerat suscipit, quos cumque, impedit repellendus, saepe corporis dignissimos commodi voluptates! Quaerat excepturi assumenda quod doloribus non error animi autem? Tempore nobis enim deleniti dolores perferendis voluptatibus, magni amet laborum impedit reprehenderit quidem numquam, aperiam rerum ratione quaerat illo repellendus fugiat libero delectus earum cumque quo nisi. Dolorem?</div>
+                    <div className="about-text">I'm an artist native from Buenos Aires. I started travelling in 2016 and lived in New Zealand in 2017 for a year, where I decided Europe was my next destination. I ended up in Berlin by chance and fell in love with the city. The pandemic gave me an opportunity to reconsider where I want to be and the time to finally learn web-development, after a one year full stack web development course, I'm ready for new challenges and to start my freelance career!</div>
                 </div>
 
                 <div className="skill-container">
                     <h3>My Skills</h3>
                     <div className="icon-container">
-                        <div><i className="fab fa-html5"></i></div>
-                        <div><i className="fab fa-css3"></i></div>
-                        <div><i className="fab fa-sass"></i></div>
-                        <div><i className="fab fa-github"></i></div>
-                        <div><i className="fab fa-js"></i></div>
-                        <div><i className="fab fa-php"></i></div>
+                        <div>
+                            <span className="html5">{html5}</span>
+                            <span className="css3">{css3}</span>
+                            <span className="js">{javascript}</span>
+                            <span className="react">{react}</span>
+                            <span className="node">{node}</span>
+                        </div>
+                        <div>
+                            <span className="redux">{redux}</span>
+                            <span className="socket">{socket}</span>
+                            <span className="mongo">{mongo}</span>
+                            <span className="sass">{sass}</span>
+                        </div>
                     </div>
                 </div>
             </section>

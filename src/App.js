@@ -1,14 +1,13 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom';
 
-import Home from './routes/home/home'
-import NavigationBar from './components/navigation/navigation-bar'
-import About from './routes/about/about'
-import Portfolio from './routes/portfolio/portfolio'
-import Music from './routes/music/music'
-import Contact from './routes/contact/contact'
+import Home from './routes/home/home';
+import NavigationBar from './components/navigation/navigation-bar';
+import About from './routes/about/about';
+import Portfolio from './routes/portfolio/portfolio';
+import Music from './routes/music/music';
+import Contact from './routes/contact/contact';
 
 const App = () => {
-
   return (
     <Routes>
       <Route path='/' element={<NavigationBar />}>
@@ -19,11 +18,7 @@ const App = () => {
         <Route path='contact' element={<Contact />} />
       </Route>
     </Routes>
-    // <div>
-    //   <NavigationBar />
-    //   <Home />
-    // </div>
-  )
+  );
 };
 
 export default App;
