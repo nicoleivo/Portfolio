@@ -16,7 +16,7 @@
     .about-img {
       position: absolute;
       left: 5vw;
-      top: 115px;
+      top: 7.2rem;
       width: 150px;
       height: 150px;
       overflow: hidden;
@@ -59,12 +59,26 @@
     }
   }
   
-  @media screen and (max-width:1430px) {
+  @media screen and (max-width:1570px) {
     #about {
-      .about-img img{
-      position: relative;
-      left: 0px;
-      top: 0px;
+      justify-content: space-between;
+
+      .about-img {
+        position: relative;
+        left: 0;
+        top: 3rem;
+      }
+    }
+  } 
+
+  @media screen and (max-width:760px) {
+    #about {
+      .about-text {
+        width: 100%;
+      }
+
+      .skill-container {
+        width: 100%;
       }
     }
   } 

@@ -45,9 +45,10 @@
         text-align: center;
       }
     }
-  }
+}
   
-  @media screen and (max-width:1250px) {
+@media screen and (max-width:1250px) {
+  #music {
     .spotify {
       flex-direction: column;
       align-items: center;
@@ -62,7 +63,29 @@
   
     .music-skills {
       .skill-text {
-        font-size: 10rem;
+        font-size: 2rem;
       }
     }
   }
+}
+
+@media screen and (max-width:760px) {
+  #music {
+    .spotify {
+      iframe {
+        width: 100%;
+      }
+
+      .music-text1 {
+        width: 100%;
+      }
+    }
+
+    .music-skills {
+        width: 100%;
+      .skill-text {
+        word-wrap: break-word
+      }
+    }
+  }
+}
