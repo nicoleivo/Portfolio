@@ -15,7 +15,7 @@ const NavigationBar = () => {
         <Link className="logo text-flicker-in-glow pulsate-fwd" to='/'>
             NL
         </Link>
-        <nav>
+        <nav className={links && ('sticky')}>
             {/* {links && ( */}
                 <div className={`${links ? ('checked') : ('unchecked')} nav-inner`}>
                     <ul>
