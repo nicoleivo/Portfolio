@@ -9,6 +9,11 @@ const NavigationBar = () => {
     const navbarHandler = () => {
         setLinks(!links)
     }
+
+    const linkHandler = () => {
+        setLinks(false)
+    }
+
     return (
         <>
         <header className="header-container">
@@ -19,11 +24,11 @@ const NavigationBar = () => {
             {/* {links && ( */}
                 <div className={`${links ? ('checked') : ('unchecked')} nav-inner`}>
                     <ul>
-                        <li><Link  className='links' to='/'>Home</Link></li>
-                        <li><Link className='links' to='/portfolio'>Portfolio</Link></li>
-                        <li><Link className='links' to='/about'>About me</Link></li>
-                        <li><Link className='links' to='/music'>Music</Link></li>
-                        <li><Link className='links' to='/contact'>Contact</Link></li>
+                        <li><Link  className='links' to='/' onClick={linkHandler}>Home</Link></li>
+                        <li><Link className='links' to='/portfolio' onClick={linkHandler}>Portfolio</Link></li>
+                        <li><Link className='links' to='/about' onClick={linkHandler}>About me</Link></li>
+                        <li><Link className='links' to='/music' onClick={linkHandler}>Music</Link></li>
+                        <li><Link className='links' to='/contact' onClick={linkHandler}>Contact</Link></li>
                     </ul>
                 </div>
             {/* )} */}
