@@ -130,7 +130,8 @@
       width: 100%;
       display: flex;
       justify-content: center;
-  
+      min-height: 20rem;
+
       .checked {
            height: 50vh;
            transition: all .2s;
@@ -148,6 +149,7 @@
 
         ul {
           flex-direction: column;
+          min-height: 20rem;
         }
       }
 
