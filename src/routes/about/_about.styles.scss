@@ -83,3 +83,17 @@
       }
     }
   } 
+
+  @media screen and (max-width:400px) {
+    #about {
+      .skill-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .icon-container {
+          width: 50%;
+          display: block;
+        }
+      }
+    }
+  } 

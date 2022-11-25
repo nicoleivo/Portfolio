@@ -130,12 +130,12 @@
       width: 100%;
       display: flex;
       justify-content: center;
-      min-height: 20rem;
 
       .checked {
            height: 50vh;
            transition: all .2s;
            position: sticky;
+           min-height: 20rem;
       }
   
       .unchecked {
