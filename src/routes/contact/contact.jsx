@@ -5,7 +5,7 @@ import './_contact.styles.scss'
 import img from '../../images/13A4F5FA-EC62-41F8-85AC-D4376A4F25BD.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faWindows } from '@fortawesome/free-brands-svg-icons'
 
 const Contact = () => {
     const envelope = <FontAwesomeIcon icon={faEnvelope} />;
@@ -20,7 +20,11 @@ const Contact = () => {
             <div className="contact-container">
                 <h2>I'm available for freelance work.</h2>
                 <Link 
-                    to="mailto:cucchiettinicolas@gmail.com" 
+                    to="#"
+                    onClick={(e) => {
+                        window.location.href = 'mailto:cucchiettinicolas@gmail.com';
+                        e.preventDefault();
+                    }}
                     target="_blank">
                         cucchiettinicolas@gmail.com
                         <span className='email'>{envelope}</span>

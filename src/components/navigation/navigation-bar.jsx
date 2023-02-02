@@ -25,7 +25,7 @@ const NavigationBar = () => {
                 <div className={`${links ? ('checked') : ('unchecked')} nav-inner`}>
                     <ul>
                         <li><Link  className='links' to='/' onClick={linkHandler}>Home</Link></li>
-                        <li><Link className='links' to='/portfolio' onClick={linkHandler}>Portfolio</Link></li>
+                        {/* <li><Link className='links' to='/portfolio' onClick={linkHandler}>Portfolio</Link></li> */}
                         <li><Link className='links' to='/about' onClick={linkHandler}>About me</Link></li>
                         <li><Link className='links' to='/music' onClick={linkHandler}>Music</Link></li>
                         <li><Link className='links' to='/contact' onClick={linkHandler}>Contact</Link></li>
