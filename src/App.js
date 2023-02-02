@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './routes/home/home';
 import NavigationBar from './components/navigation/navigation-bar';
 import About from './routes/about/about';
-import Portfolio from './routes/portfolio/portfolio';
+// import Portfolio from './routes/portfolio/portfolio';
 import Music from './routes/music/music';
 import Contact from './routes/contact/contact';
 
