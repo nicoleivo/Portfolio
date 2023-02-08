@@ -29,12 +29,11 @@ const Contact = () => {
                         cucchiettinicolas@gmail.com
                         <span className='email'>{envelope}</span>
                 </Link>
-                <Link 
-                    to="https://github.com/nicoleivo"  
-                    target="_blank">
-                        GitHub
-                        <span className="github">{github}</span>
-                </Link>
+                <a 
+                    href="https://github.com/nicoleivo">
+                    GitHub
+                    <span className="github">{github}</span>
+                </a>
                 
                 {/* <Link 
                     to="https://instagram.com/_leivo" 
